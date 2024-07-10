@@ -35,17 +35,17 @@ async def member_permissions(chat_id: int, user_id: int):
     return perms
 
 PHOTO = [
-    "https://telegra.ph/file/d2a23fbe48129a7957887.jpg",
-    "https://telegra.ph/file/ddf30888de58d77911ee1.jpg",
-    "https://telegra.ph/file/268d66cad42dc92ec65ca.jpg",
-    "https://telegra.ph/file/13a0cbbff8f429e2c59ee.jpg",
-    "https://telegra.ph/file/bdfd86195221e979e6b20.jpg",
+    "https://telegra.ph//file/5d1975040c8d2f20957cf.jpg",
+    "https://telegra.ph//file/5d1975040c8d2f20957cf.jpg",
+    "https://telegra.ph//file/5d1975040c8d2f20957cf.jpg",
+    "https://telegra.ph//file/5d1975040c8d2f20957cf.jpg",
+    "https://telegra.ph//file/5d1975040c8d2f20957cf.jpg",
 ]
 
 Mukesh = [
     [
-        InlineKeyboardButton(text="ɴᴏᴏʙ", user_id=OWNER_ID),
-        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="ᴅᴇɴ", user_id=7353842230),
+        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/densupportmusic"),
     ],
     [
         InlineKeyboardButton(
@@ -62,7 +62,7 @@ async def restart(client, m: Message):
     await m.delete()
     accha = await m.reply("⚡")
     await asyncio.sleep(0.2)
-    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ..")
+    await accha.edit(" ᴀʟɪᴠɪɴɢ..")
 
     await accha.delete()
     await asyncio.sleep(0.3)
@@ -74,15 +74,9 @@ async def restart(client, m: Message):
     owner=await pbot.get_users(OWNER_ID)
     await m.reply_photo(
         START_IMG,
-        caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 『[{BOT_NAME}](f"t.me/{BOT_USERNAME}")』**
+        caption=f"""**Hallo 『[{BOT_NAME}](f"t.me/{BOT_USERNAME}")』**
    ━━━━━━━━━━━━━━━━━━━
   » **ᴍʏ ᴏᴡɴᴇʀ :** {owner.mention()}
-  
-  » **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{lver}`
-  
-  » **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{tver}`
-  
-  » **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pver}`
   
   » **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{pyver()}`
    ━━━━━━━━━━━━━━━━━━━""",
